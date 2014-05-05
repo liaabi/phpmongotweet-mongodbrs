@@ -51,7 +51,7 @@ if (true == is_option_set($q_opts) ) {
 
 //  Set twitter search api uri.
 // $twitter_uri = "http://api.twitter.com/1/statuses/user_timeline.json?screen_name=" . $screen_name;
-$twitter_uri = "http://search.twitter.com/search.json?q=" . $search_term . "&rpp=70";
+$twitter_uri = "https://api.twitter.com/1.1/search/tweets.json?q=" . $search_term . "&rpp=70";
 
 $d_opts = array('d', 'delta');
 if ((true == is_option_set($d_opts))  && ($lastid != null) ) {
